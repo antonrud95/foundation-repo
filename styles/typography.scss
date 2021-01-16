@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+.text-18-18 {
+    font-size: remify(18px);
+    line-height: remify(18px);
+}
+.text-18-25 {
+    font-size: remify(18px);
+    line-height: remify(25px);
+}
+.text-24-34 {
+    font-size: remify(24px);
+    line-height: remify(34px);
+}
+.text-h1 {
+    @apply font-bold;
+    font-size: remify(50px);
+    line-height: remify(50px);
+    @screen lg {
+        font-size: remify(80px);
+        line-height: remify(80px);
+    }
+}
+.text-h2 {
+    font-size: remify(27px);
+    line-height: remify(38px);
+    @screen lg {
+        font-size: remify(35px);
+        line-height: remify(42px);
+    }
+}
+.title-bold {
+    @apply font-bold;
+    font-size: remify(27px);
+    line-height: remify(38px);
+    @screen lg {
+        font-size: remify(50px);
+        line-height: remify(60px);
+    }
+}
+

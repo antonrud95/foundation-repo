@@ -1,0 +1,57 @@
+@tailwind base;
+@import './typography.scss';
+
+@tailwind components;
+
+@tailwind utilities;
+@import './functions.scss';
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+.negative-top {
+  margin-top: -223px !important;
+}
+.transition-nav {
+  transition: all .3s ease-in-out !important;
+}
+* {
+  box-sizing: border-box;
+}
+.var-width {
+  @media(min-width: 768px) {
+    width: calc(50% - 5px) !important;
+  }
+}
+.var-second-width {
+  @media(min-width: 768px) {
+    width: calc(33.33333% - 5px) !important;
+  }
+}
+.grad {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.5) 100%), #3040C4;
+}
+.slick-dots.slick-thumb {
+  bottom: -180px !important;
+  max-width: 820px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  height: 100%;
+  @media(min-width: 1024px) {
+    bottom: -250px !important;
+  }
+}
+.slick-dots li {
+  width: 30% !important;
+}
+
+
+@import './typography.scss'
