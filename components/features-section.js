@@ -14,7 +14,7 @@ const FeaturesSection = ({main, leftimage, featureItems, dropItems}) => {
             <div className='hidden xl:block max-w-90 absolute left-0 top-258'>
                 <img src={leftimage.url}/>
             </div>
-            <div className='container mx-auto px-15 max-w-1176 pb-131'>
+            <div className='container mx-auto px-15 max-w-1176 lg:pb-131'>
                 <div className='md:hidden'>
                     {featureItems.map((item, index) => {
                         return(

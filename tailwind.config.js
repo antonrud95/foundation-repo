@@ -30,7 +30,8 @@ module.exports = {
          'text': '#2B292D',
          'green': '#009B4D',
          'lowertitle': 'rgba(43, 41, 45, 0.6)',
-         'sky': '#3142C6'
+         'sky': '#3142C6',
+         'orange': '#f1592b'
        },
        padding: {
          5: '5px',
@@ -45,6 +46,7 @@ module.exports = {
          40: '40px',
          42: '42px',
          45: '45px',
+         50: '50px',
          56: '56px',
          60: '60px',
          70: '70px',
@@ -98,13 +100,15 @@ module.exports = {
         'purple': '#8D448B',
         'grey': '#E3E3E3',
         'sky': '#3142C6',
-        'dark': '#2B292D'
+        'dark': '#2B292D',
+        'blue': '#0185D0'
        },
        backgroundColor: {
          'dark': '#0E1D28',
          'hero': '#F3C6BD',
          'blue': '#3040C4',
-         'grey': '#F4F5F7'
+         'grey': '#F4F5F7',
+         'messages-bg': '#FCF0E3'
        },
        boxShadow: {
          'input': '0px 10px 50px rgba(48, 98, 145, 0.08)',
@@ -132,10 +136,12 @@ module.exports = {
         580: '580px',
         555: '555px',
         521: '521px',
+        519: '519px',
         546: '546px',
         500: '500px',
         470: '470px',
         456: '456px',
+        425: '425px',
         415: '415px',
         410: '410px',
         386: '386px',

@@ -81,6 +81,23 @@ export async function getStaticProps() {
               text
             }
           }
+          ... on MessagesSection {
+            image {
+              url
+            }
+            underimage
+            uppertitle
+            title
+            text
+            message {
+             text
+            }
+            picture {
+              url
+            }
+            name
+            position
+          }
         }
       }
     }

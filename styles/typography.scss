@@ -4,6 +4,10 @@
     font-size: remify(14px);
     line-height: remify(22px);
 }
+.text-16-22 {
+    font-size: remify(16px);
+    line-height: remify(22px);
+}
 .text-18-18 {
     font-size: remify(18px);
     line-height: remify(18px);
@@ -15,6 +19,10 @@
 .text-18-26 {
     font-size: remify(18px);
     line-height: remify(26px);
+}
+.text-20-28 {
+    font-size: remify(20px);
+    line-height: remify(28px);
 }
 .text-22-26 {
     @apply font-bold;
