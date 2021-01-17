@@ -38,6 +38,23 @@ export async function getStaticProps() {
               url
             }
           }
+          ... on InfoLogo {
+            infoBlocks {
+              id
+              titles {
+                id
+                title
+              }
+              texts {
+                id
+                text
+              }
+            }
+            logos {
+              id
+              url
+            }
+          }
         }
       }
     }

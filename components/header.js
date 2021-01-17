@@ -45,7 +45,7 @@ const Header = ({ logo, button, navlinks }) => {
                     {navlinks.map((link, index) => {
                       return(
                         <Link href={link.href} key={index}>
-                                <a className={index === 0 ? 'transition duration-500 ease-in-out text-18-25 text-text mr-64 font-bold' : 'transition duration-500 ease-in-out text-18-25 text-text mr-64'}>
+                                <a className={index === 0 ? 'transition duration-500 ease-in-out text-18-25 text-text mr-64 font-bold' : 'transition duration-500 ease-in-out text-18-25 text-text mr-64 hover:text-white'}>
                                   {link.link}
                                 </a>
                             </Link>

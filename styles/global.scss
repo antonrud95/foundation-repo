@@ -19,6 +19,9 @@ a {
 .negative-top {
   margin-top: -223px !important;
 }
+.w-32 {
+  width: calc(33.33333% - 1px);
+}
 .transition-nav {
   transition: all .3s ease-in-out !important;
 }
