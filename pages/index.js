@@ -98,6 +98,30 @@ export async function getStaticProps() {
             name
             position
           }
+          ... on CommunicateSection {
+            uppertitle
+            title
+            text
+            button {
+              name
+              link
+              type
+            }
+            image {
+              url
+            }
+            underimage
+            communicateItems {
+              id
+              title
+              text
+              navlink {
+                link
+                id
+                href
+              }
+            }
+          }
         }
       }
     }
