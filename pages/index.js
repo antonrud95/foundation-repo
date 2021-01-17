@@ -55,6 +55,32 @@ export async function getStaticProps() {
               url
             }
           }
+          ... on FeaturesSection {
+            main {
+              url
+            }
+            leftimage {
+              url
+            }
+            featureItems {
+              id
+              uppertitle
+              title
+              text
+              image {
+                url
+              }
+              lowertitle
+            }
+            dropItems {
+              id
+              picture {
+                url
+              }
+              title
+              text
+            }
+          }
         }
       }
     }

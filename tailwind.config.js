@@ -14,6 +14,9 @@ module.exports = {
          '5px': '5px',
          '8px': '8px'
        },
+       borderOpacity: {
+          '15': '0.15'
+       },
        borderWidth: {
         '3': '3px'
        },
@@ -24,7 +27,10 @@ module.exports = {
          'grey': '#566272',
          'blue': '#3040C4',
          'hovered': 'rgba(255, 255, 255, 0.6)',
-         'text': '#2B292D'
+         'text': '#2B292D',
+         'green': '#009B4D',
+         'lowertitle': 'rgba(43, 41, 45, 0.6)',
+         'sky': '#3142C6'
        },
        padding: {
          5: '5px',
@@ -68,6 +74,7 @@ module.exports = {
         sm: '30px',
         32: '32px',
         35: '35px',
+        40: '40px',
         45: '45px',
         xl: '48px',
         58: '58px',
@@ -84,10 +91,14 @@ module.exports = {
        },
        letterSpacing: {
          'button': '-0.16px',
-         'title': '-1.5px'
+         'title': '-0.357143px',
+         'h2': '-0.5px'
        },
        borderColor: {
-        'purple': '#8D448B'
+        'purple': '#8D448B',
+        'grey': '#E3E3E3',
+        'sky': '#3142C6',
+        'dark': '#2B292D'
        },
        backgroundColor: {
          'dark': '#0E1D28',
@@ -103,6 +114,7 @@ module.exports = {
         '1/4': '25%',
         '1/2': '50%',
         '3/4': '75%',
+        1440: '1440px',
         1410: '1410px',
         1326: '1326px',
         1298: '1298px',
@@ -139,6 +151,7 @@ module.exports = {
         110: '110px',
         105: '105px',
         100: '100px',
+        90: '90px',
         78: '21px',
         77: '77px',
         76: '76px',
@@ -207,11 +220,14 @@ module.exports = {
          '1000': 1000
        },
        inset : {
+         258: '258px',
          180: '180px',
          170: '170px',
          165: '165px',
          160: '160px',
          155: '155px',
+         70: '70px',
+         35: '35px',
          25: '25px'
        }
     },

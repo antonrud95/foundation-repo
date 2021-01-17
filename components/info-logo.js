@@ -1,4 +1,5 @@
 import classnames from 'classnames'
+import Fade from 'react-reveal/Fade';
 
 const InfoLogo = ({infoBlocks, logos}) => {
     const logoStyles = 'mb-1 min-h-93 w-32 flex items-center justify-center md:w-2/12 bg-white md:min-h-75'
@@ -30,28 +31,32 @@ const InfoLogo = ({infoBlocks, logos}) => {
         <div>
             <div className='bg-grey py-45 md:py-77'>
                 <div className='container mx-auto px-15 max-w-1176 md:flex'>
-                    {infoBlocks.map((block, index) => {
-                        return(
-                            <div key={block.id} className='mb-xs md:mb-0 md:mr-sm max-w-555'>
-                                <h3 className='text-dark font-bold text-22-32'>{block.titles[0].title}</h3>
-                                <p className='text-dark text-22-32'>{block.texts[0].text}</p>
-                            </div>
-                        )
-                    })}
+                    <Fade bottom>
+                        {infoBlocks.map((block, index) => {
+                            return(
+                                <div key={block.id} className='mb-xs md:mb-0 md:mr-sm max-w-555'>
+                                    <h3 className='text-dark font-bold text-22-32'>{block.titles[0].title}</h3>
+                                    <p className='text-dark text-22-32'>{block.texts[0].text}</p>
+                                </div>
+                            )
+                        })}
+                    </Fade>
                 </div>
             </div>
             <div className='bg-grey md:bg-white md:py-30'>
                 <div className='mx-auto max-w-1232'>
                     <div className='flex items-center flex-wrap justify-between'>
-                        {logos.map((logo, index) => {
-                            return(
-                                <div className={logoStyles} key={logo.id}>
-                                    <div className={classnames(generateClassnames(index))}>
-                                        <img src={logo.url} className='w-full h-full'/>
+                        <Fade bottom>
+                            {logos.map((logo, index) => {
+                                return(
+                                    <div className={logoStyles} key={logo.id}>
+                                        <div className={classnames(generateClassnames(index))}>
+                                            <img src={logo.url} className='w-full h-full'/>
+                                        </div>
                                     </div>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
+                        </Fade>
                     </div>
                 </div>
             </div>
