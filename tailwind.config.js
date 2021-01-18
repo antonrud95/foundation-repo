@@ -103,7 +103,8 @@ module.exports = {
         'grey': '#E3E3E3',
         'sky': '#3142C6',
         'dark': '#2B292D',
-        'blue': '#0185D0'
+        'blue': '#0185D0',
+        'work': 'rgba(43, 41, 45, 0.2)'
        },
        backgroundColor: {
          'dark': '#0E1D28',
@@ -112,7 +113,8 @@ module.exports = {
          'grey': '#F4F5F7',
          'messages-bg': '#FCF0E3',
          'sky': '#3141C5',
-         'ocean': '#00A1C6'
+         'ocean': '#00A1C6',
+         'link': '#D5D4D5'
        },
        boxShadow: {
          'input': '0px 10px 50px rgba(48, 98, 145, 0.08)',
@@ -156,7 +158,9 @@ module.exports = {
         273: '273px',
         265: '265px',
         260: '260px',
+        250: '250px',
         230: '230px',
+        190: '190px',
         160: '160px',
         153: '153px',
         135: '135px',
@@ -196,6 +200,7 @@ module.exports = {
        },
        minWidth: {
         597: '597px',
+        220: '220px',
         64: '64px'
        },
        minHeight: {
@@ -224,6 +229,7 @@ module.exports = {
         200: '200px',
         195: '195px',
         170: '170px',
+        80: '80px',
         62: '62px',
         48: '48px',
         31: '31px',

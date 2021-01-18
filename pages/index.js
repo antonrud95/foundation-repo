@@ -156,6 +156,21 @@ export async function getStaticProps() {
               position
             }
           }
+          ... on HiringSection {
+            title
+            text
+            button {
+              id
+              name
+              type
+              link
+            }
+            hiringItems {
+              id
+              job
+              city
+            }
+          }
         }
       }
     }
