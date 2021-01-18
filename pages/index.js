@@ -187,6 +187,29 @@ export async function getStaticProps() {
             undertext
             link
           }
+          ... on Footer {
+            logo {
+              logoimage {
+                url
+              }
+            }
+            text
+            socials {
+              id
+              url
+            }
+            footerItems {
+              id
+              title
+              directions
+            }
+            footerNav
+            mobileLogo {
+              url
+            }
+            mobileTitle
+            mobileText 
+          }
         }
       }
     }

@@ -7,6 +7,7 @@ import CommunicateSection from './communicate-section';
 import VisitorsSection from './visitors-section';
 import CarouselSection from './carousel-section';
 import HiringSection from './hiring-section';
-import TrialSection from './trial-section'
+import TrialSection from './trial-section';
+import Footer from './footer'
 
-export { Header, HeroSection, InfoLogo, FeaturesSection, MessagesSection, CommunicateSection, VisitorsSection, CarouselSection, HiringSection, TrialSection };
+export { Header, HeroSection, InfoLogo, FeaturesSection, MessagesSection, CommunicateSection, VisitorsSection, CarouselSection, HiringSection, TrialSection, Footer };
