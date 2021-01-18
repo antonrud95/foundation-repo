@@ -122,6 +122,24 @@ export async function getStaticProps() {
               }
             }
           }
+          ... on VisitorsSection {
+            uppertitle
+            title
+            text
+            buttons {
+              id
+              name
+              link
+              type
+            }
+            visitorsItems {
+              id
+              image {
+                url
+              }
+              text
+            }
+          }
         }
       }
     }

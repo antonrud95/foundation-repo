@@ -3,6 +3,7 @@ import Header from './header';
 import InfoLogo from './info-logo';
 import FeaturesSection from './features-section';
 import MessagesSection from './messages-section';
-import CommunicateSection from './communicate-section'
+import CommunicateSection from './communicate-section';
+import VisitorsSection from './visitors-section'
 
-export { Header, HeroSection, InfoLogo, FeaturesSection, MessagesSection, CommunicateSection };
+export { Header, HeroSection, InfoLogo, FeaturesSection, MessagesSection, CommunicateSection, VisitorsSection };

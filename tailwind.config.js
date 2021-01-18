@@ -40,6 +40,7 @@ module.exports = {
          13: '13px',
          15: '15px',
          20: '20px',
+         22: '22px',
          25: '25px',
          28: '28px',
          30: '30px',
@@ -109,7 +110,9 @@ module.exports = {
          'hero': '#F3C6BD',
          'blue': '#3040C4',
          'grey': '#F4F5F7',
-         'messages-bg': '#FCF0E3'
+         'messages-bg': '#FCF0E3',
+         'sky': '#3141C5',
+         'ocean': '#00A1C6'
        },
        boxShadow: {
          'input': '0px 10px 50px rgba(48, 98, 145, 0.08)',
@@ -170,6 +173,7 @@ module.exports = {
         35: '35px'
        },
        maxHeight: {
+         300: '300px',
          230: '230px',
          75: '75px',
          60: '60px',
@@ -200,6 +204,10 @@ module.exports = {
          '32%': '32%',
          110: '110px',
          111: '111px',
+         119: '119px',
+         138: '138px',
+         142: '142px',
+         160: '160px',
          150: '150px',
          78: '78px',
          260: '260px',
@@ -209,8 +217,10 @@ module.exports = {
        },
        height: {
         354: '354px',
+        300: '300px',
         283: '283px',
         200: '200px',
+        195: '195px',
         170: '170px',
         62: '62px',
         48: '48px',
@@ -239,6 +249,9 @@ module.exports = {
          70: '70px',
          35: '35px',
          25: '25px'
+       },
+       backgroundOpacity: {
+         '7': '0.07'
        }
     },
   },
