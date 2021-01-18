@@ -140,6 +140,22 @@ export async function getStaticProps() {
               text
             }
           }
+          ... on CarouselSection {
+            images {
+              id
+              url
+            }
+            baloon {
+              url
+            }
+            title
+            carouselItems {
+              id
+              text
+              name
+              position
+            }
+          }
         }
       }
     }
