@@ -171,6 +171,22 @@ export async function getStaticProps() {
               city
             }
           }
+          ... on TrialSection {
+            image {
+              url
+            }
+            title
+            text
+            button {
+              id
+              name
+              type
+              link
+            }
+            placeholder
+            undertext
+            link
+          }
         }
       }
     }

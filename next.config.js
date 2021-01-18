@@ -1,5 +1,5 @@
-const withSvgr = require("next-svgr");
-
-module.exports = withSvgr ({
-    /* config options here */
-})
+module.exports = {
+    images: {
+      domains: ['media.graphcms.com'],
+    },
+}
