@@ -37,13 +37,13 @@ const HiringSection = ({title, text, button, hiringItems}) => {
                         const textStyles = 'text-22-28 max-w-127 mb-6 pt-20 md:max-w-full md:pt-0 md:mb-0'
                         const textSecondStyles = 'text-18-24 text-opacity-50 mb-xs md:mb-0 md:mr-64'
                         return(
-                            <div key={item.id} className='border border-work rounded-8px pl-20 mb-15 flex max-w-750 mx-auto md:h-80 hover:bg-sky' onMouseEnter={hoveredItem} onMouseLeave={hoveredItem}>
+                            <div key={item.id} className='group border border-work rounded-8px pl-20 mb-15 flex max-w-750 mx-auto md:h-80 hover:bg-sky' onMouseEnter={hoveredItem} onMouseLeave={hoveredItem}>
                                 <div className='w-full md:flex md:items-center justify-between'>
-                                    <p className={!hovered || index !== getIndex ? textStyles : classnames(textStyles, 'text-white')}>{item.job}</p>
-                                    <p className={!hovered || index !== getIndex ? classnames(textSecondStyles, 'text-dark') : classnames(textSecondStyles, 'text-white text-opacity-100')}>{item.city}</p>
+                                    <p className='text-22-28 max-w-127 mb-6 pt-20 md:max-w-full md:pt-0 md:mb-0 group-hover:text-white'>{item.job}</p>
+                                    <p className='text-18-24 text-opacity-50 mb-xs md:mb-0 md:mr-64 group-hover:text-white group-hover:text-opacity-100'>{item.city}</p>
                                 </div>
                                 <div className='flex bg-link w-full max-w-50 md:bg-transparent items-center'>
-                                    <FontAwesomeIcon icon={faChevronRight} className={!hovered || index !== getIndex ? 'hidden md:block' : 'hidden md:block text-white'}/>
+                                    <FontAwesomeIcon icon={faChevronRight} className='hidden md:block group-hover:text-white'/>
                                 </div>
                             </div>
                         )

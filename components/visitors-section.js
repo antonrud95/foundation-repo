@@ -1,23 +1,17 @@
-import {useState} from 'react'
 import Fade from 'react-reveal/Fade';
 import classnames from 'classnames'
 import Button from './button'
 
 const VisitorsSection = ({uppertitle, title, text, buttons, visitorsItems}) => {
-    const [hovered, setHovered] = useState(false)
-    const [getIndex, setGetIndex] = useState()
     let widthStyle
     const getWidthStyles = (index) => {
         switch(index) {
             case 0:
                 return widthStyle = 'w-138 h-195'
-                break
             case 1: 
                 return widthStyle = 'w-142 h-195'
-                break
             case 2:
                 return widthStyle = 'w-160 h-195'
-                break
             case 3:
                 return widthStyle = 'w-119 h-195'
             
@@ -55,16 +49,12 @@ const VisitorsSection = ({uppertitle, title, text, buttons, visitorsItems}) => {
                     </Fade>
                 </div>
                 <Fade bottom delay={350}>
-                    <div className='md:flex justify-between'>
+                    <div className='md:flex justify-between flex-wrap'>
                         {visitorsItems.map((item, index) => {
-                            const hoverToggle = () => {
-                                setHovered(!hovered)
-                                setGetIndex(index)
-                            }
                             return(
-                                <div className='w-full md:w-1/4 md:max-w-260 h-300 flex flex-col items-center justify-start pt-22 shadow-button bg-white hover:bg-sky transition duration-300 ease-in-out mb-15 md:mb-0' key={item.id} onMouseEnter={hoverToggle} onMouseLeave={hoverToggle}> 
+                                <div className='group w-full md:w-2/4 lg:w-1/4 lg:max-w-260 h-300 flex flex-col items-center justify-start pt-22 shadow-button bg-white hover:bg-sky transition duration-300 ease-in-out mb-15 md:mb-0' key={item.id}> 
                                     <img src={item.image.url} className={classnames(getWidthStyles(index), widthStyle)}/>
-                                    <p className={!hovered || index !== getIndex ? 'text-22-28 font-bold mt-24 capitalize' : 'text-22-28 font-bold mt-24 capitalize text-white'}>{item.text}</p>
+                                    <p className='text-22-28 font-bold mt-24 capitalize group-hover:text-white'>{item.text}</p>
                                 </div>
                             )
                         })}

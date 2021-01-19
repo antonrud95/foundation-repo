@@ -2,8 +2,14 @@ import {useState} from 'react'
 import Fade from 'react-reveal/Fade';
 
 const FeaturesSection = ({main, leftimage, featureItems, dropItems}) => {
-    const [dropdown, setDropdown] = useState(false)
-    const [getIndex, setGetIndex] = useState()
+    const [accordionIndex, setAccordionIndex] = useState(null);
+  const toggleAccordion = (index) => {
+    if (accordionIndex !== index) {
+      setAccordionIndex(index);
+    } else {
+      setAccordionIndex(null);
+    }
+  };
     return(
         <div className='container mx-auto max-w-1440 relative md:py-35 lg:py-70'>
             <Fade bottom delay={400}>
@@ -48,21 +54,18 @@ const FeaturesSection = ({main, leftimage, featureItems, dropItems}) => {
                 <Fade bottom delay={350}>
                     <div className='hidden md:block'>
                         {dropItems.map((item, index) => {
-                            const dropshow = () => {
-                                setDropdown(!dropdown)
-                                setGetIndex(index)
-                            }
                             return(
-                                <div key={item.id} className='border-b border-dark border-opacity-15 max-w-456 mb-xs pb-20 cursor-pointer' onClick={dropshow}>
+                                <div key={item.id} className='border-b border-dark border-opacity-15 max-w-456 mb-xs pb-20 cursor-pointer' onClick={() => toggleAccordion(index)}>
                                     <div className='flex items-center'>
                                         <img src={item.picture.url} className='mr-15'/>
                                         <h4 className='text-22-26 text-sky'>{item.title}</h4>
                                     </div>
-                                    <div className={!dropdown || index !== getIndex ? 'hidden' : 'block'}>
+                                    {accordionIndex === index && <div>
                                         <p className='text-18-26 pt-8'>
                                             {item.text}
                                         </p>
                                     </div>
+                                      }
                                 </div>
                             )
                         })}
